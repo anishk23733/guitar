@@ -10,7 +10,7 @@ if __name__ == "__main__":
     # Get fretboard in a key/scale
     start_fret = input("Starting fret (Enter for 0): ")
     if start_fret:
-        fretboard_sliced = fboard.copy_slice(start_fret, 4)
+        fretboard_sliced = fboard.copy_slice(int(start_fret), 4)
     else:
         fretboard_sliced = fboard.copy_slice(0, 5)
     
